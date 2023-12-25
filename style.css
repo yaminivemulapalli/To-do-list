@@ -1,0 +1,95 @@
+
+body, h1, h2, form, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header section */
+header {
+    background-color: #ffb5f5;
+    color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Style the form for adding new tasks */
+#new-task {
+    margin-top: 10px;
+}
+
+#task-add {
+    padding: 0.5rem;
+}
+
+#task-submit {
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    margin: 2rem;
+}
+
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tasks > div {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    display:  flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #d2c0c0;
+    border-radius: 12px;
+}
+
+.actions button {
+    
+    background-color: #cfa6fb;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Add hover effect to buttons */
+.actions button:hover {
+    background-color: #0099ff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+
+    .tasks > div {
+        width: 100%;
+    }
+}
